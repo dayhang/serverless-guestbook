@@ -1,7 +1,7 @@
 /**
  * Web application
  */
-const apiUrl = 'https://us-south.functions.appdomain.cloud/api/v1/web/46597a3c-6fad-41dd-8df7-93dcac36200b/guestbook';
+const apiUrl = 'https://us-south.functions.appdomain.cloud/api/v1/web/6dc6f4df-a8d0-4b04-adad-1b8aebcc9f3e/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
@@ -16,7 +16,7 @@ const guestbook = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${apiUrl}/save-guestbook-entries-sequence.json`,
+      url: `${apiUrl}/save-guestbook-entry-sequence.json`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
